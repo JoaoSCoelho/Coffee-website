@@ -1,0 +1,59 @@
+:root {
+  font-size: 62.5%
+}
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #393c54;
+}
+
+main {
+  min-width: 22rem;
+  max-width: 70%;
+  text-align: center;
+}
+
+img#logo {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+img#logo:hover {
+  opacity: 0.8;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  line-height: 5rem;
+  color: #c2caf0;
+  font-size: 1.8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+button#add-bot {
+  background: repeating-linear-gradient(45deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
+}
+
+button#support-server {
+  background: repeating-linear-gradient(135deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
+}
+
+button#support-server:hover {
+  background: repeating-linear-gradient(-45deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
+}
+
+button#add-bot:hover {
+  background: repeating-linear-gradient(-135deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
+}
