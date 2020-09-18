@@ -1,12 +1,5 @@
-:root {
-  font-size: 62.5%
-}
-
 html, body {
   height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -14,7 +7,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #393c54;
 }
 
 main {
@@ -26,6 +18,7 @@ main {
 img#logo {
   width: 90%;
   margin-bottom: 1rem;
+  max-width: 33rem;
 }
 img#logo:hover {
   opacity: 0.8;
@@ -40,9 +33,18 @@ button {
   width: 100%;
   margin-bottom: 1rem;
   cursor: pointer;
+  font-family: 'Karla', sans-serif;
+}
+
+button:hover {
+  color: #cbd4ff;
 }
 
 button#add-bot {
+  background: #f85565e8;
+}
+
+button#comandos-link {
   background: repeating-linear-gradient(45deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
 }
 
@@ -50,10 +52,27 @@ button#support-server {
   background: repeating-linear-gradient(135deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
 }
 
+button#add-bot:hover {
+  background: #f85565da;
+}
+
 button#support-server:hover {
   background: repeating-linear-gradient(-45deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
 }
 
-button#add-bot:hover {
+button#comandos-link:hover {
   background: repeating-linear-gradient(-135deg , #606681, #606681 50%, #6b718e 1px, #6b718e 100%);
+}
+
+@media (min-width: 800px) {
+  button#add-bot {
+    width: 100%;
+  }
+
+  button {
+    line-height: 7rem;
+    font-size: 2rem;
+    width: calc(50% - 0.2rem);
+    
+  }
 }

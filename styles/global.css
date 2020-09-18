@@ -1,0 +1,33 @@
+:root {
+  font-size: 62.5%;
+  --background-color: #393c54;
+  --cinza-escuro: #515570;
+  --cinza-meio-escuro: #575b79;
+  --cinza: #6b718e;
+  --azulado: #356cb6;
+  --meio-branco: #a7aece;
+  --claro: #d1d9ff;
+  --avermelhado: #f85565;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 70%;
+  }
+}

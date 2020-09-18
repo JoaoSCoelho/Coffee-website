@@ -1,0 +1,105 @@
+#cabecalho {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--cinza);
+  color: var(--claro);
+  padding: 0 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 4;
+  box-shadow: 0px 0px 10px #00000083;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  height: 3.4rem;
+}
+
+#logo h1 {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: var(--meio-branco);
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+#corpo {
+  margin: 6rem 1rem;
+  min-height: 100vh;
+  border-radius: 0.5rem;
+}
+
+.tipos {
+  /* border: 1px solid var(--avermelhado); */
+  background: var(--cinza-escuro);
+  border-radius: 0.5rem;
+}
+
+.tipos strong {
+  font-family: 'Ubuntu Mono', sans-serif;
+  color: var(--claro);
+  line-height: 3rem;
+  padding: 0 1rem;
+}
+
+.comandos-do-tipo {
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.comandos-do-tipo ul {
+  border-radius: 0.5rem;
+  background: var(--cinza);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.comandos-do-tipo ul li.li-esq {
+  display: inline-block;
+  width: calc(40% - 1rem);
+  border-right: 1px solid var(--meio-branco);
+  text-align: center;
+  height: 100%;
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
+.comandos-do-tipo ul li.li-dir {
+  display: inline-block;
+  width: calc(60% - 1.3rem);
+  border-left: 1px solid var(--meio-branco);
+  margin-left: -0.3rem;
+  vertical-align: middle;
+  padding-left: 1rem;
+  font-weight: lighter;
+}
+
+.prefix {
+  opacity: 0.4;
+}
+
+.aliases-comando {
+  opacity: 0.6;
+  font-size: 0.9em;
+  word-wrap: break-word;
+}
+
+@media (min-width: 800px) {
+  #cabecalho {
+    padding: 0 2rem;
+  }
+
+  #corpo {
+    max-width: 70rem;
+    margin: 6rem auto;
+  }
+}
