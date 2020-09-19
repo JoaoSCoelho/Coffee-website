@@ -29,7 +29,7 @@
       <strong>Informativo
         <div class="qtd-comandos-do-tipo">10</div>
       </strong>
-      <div class="comandos-do-tipo">
+      <div class="comandos-do-tipo" onclick="manterAberto(0)">
         <table>
           <ul>
             <li class="li-esq">
@@ -130,7 +130,7 @@
       <strong>Moderação
         <div class="qtd-comandos-do-tipo">5</div>
       </strong>
-      <div class="comandos-do-tipo">
+      <div class="comandos-do-tipo" onclick="manterAberto(1)">
         <table>
           <ul>
             <li class="li-esq">
@@ -192,7 +192,7 @@
       <strong>Geral
         <div class="qtd-comandos-do-tipo">10</div>
       </strong>
-      <div class="comandos-do-tipo">
+      <div class="comandos-do-tipo" onclick="manterAberto(2)">
         <table>
           <ul>
             <li class="li-esq">
@@ -310,13 +310,18 @@
   </section>
 
   <script>
+    let stts = true;
     function displayCommands(index) {
       const comandosDoTipo = document.getElementsByClassName('comandos-do-tipo')[index]
-      if(comandosDoTipo.style.display === 'block') {
+      if(comandosDoTipo.style.display === 'block' && stts) {
         comandosDoTipo.style.display = 'none'
       } else {
         comandosDoTipo.style.display = 'block'
+        stts = true
       }
+    }
+    function manterAberto(index) {
+      stts = false
     }
   </script>
 </body>
