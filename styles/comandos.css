@@ -32,12 +32,19 @@
   margin: 6rem 1rem;
   min-height: 100vh;
   border-radius: 0.5rem;
+  font-size: 1.4rem
 }
 
 .tipos {
-  /* border: 1px solid var(--avermelhado); */
   background: var(--cinza-escuro);
   border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--meio-branco);
+}
+
+.tipos:hover {
+  opacity: 0.9;
 }
 
 .tipos strong {
@@ -49,11 +56,12 @@
 
 .comandos-do-tipo {
   color: white;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 1rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   margin-bottom: 0.5rem;
+  display: none;
 }
 
 .comandos-do-tipo ul {
@@ -87,10 +95,19 @@
   opacity: 0.4;
 }
 
+.name-comando {
+  word-wrap: break-word;
+}
+
 .aliases-comando {
   opacity: 0.6;
   font-size: 0.9em;
   word-wrap: break-word;
+}
+
+.resp-calculator {
+  color: var(--avermelhado);
+  font-weight: normal;
 }
 
 @media (min-width: 800px) {

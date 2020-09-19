@@ -7,6 +7,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@300;400;700&family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/comandos.css">
 </head>
@@ -23,7 +25,7 @@
   
 
   <section id="corpo">
-    <div class="tipos">
+    <div class="tipos" onclick="displayCommands(0)">
       <strong>Informativo</strong>
       <div class="comandos-do-tipo">
         <table>
@@ -122,16 +124,14 @@
         </table>
       </div>
     </div>
-    <div class="tipos">
+    <div class="tipos" onclick="displayCommands(1)">
       <strong>Moderação</strong>
       <div class="comandos-do-tipo">
         <table>
           <ul>
             <li class="li-esq">
-              <div>
-                <p class="name-comando"><span class="prefix">_</span>ban</p><br>
-                <p class="aliases-comando"><span class="prefix">_</span>banir</p>
-              </div>
+              <p class="name-comando"><span class="prefix">_</span>ban</p><br>
+              <p class="aliases-comando"><span class="prefix">_</span>banir</p>
             </li>
             <li class="li-dir">
               <p class="desc-comando">Bane o usuário mencionado do servidor!<br><b>Modo de usar</b><br>Mencionando o usuário: <i>_ban @member</i><br>Pelo username ou apelido: <i>_ban username</i></p>
@@ -184,6 +184,35 @@
         </table>
       </div>
     </div>
+    <div class="tipos" onclick="displayCommands(2)">
+      <strong>Geral</strong>
+      <div class="comandos-do-tipo">
+        <table>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>_calculator</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>calculadora, <span class="prefix">_</span>calcular</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Calculadora para quando você precisar fazer uma conta rápida<br><b>Modo de usar</b><br>Soma: <i>3+3</i> <span class="resp-calculator">= 6</span><br>Subtração: <i>2-3</i> <span class="resp-calculator">= -1</span><br>Multiplicação: <i>2*5</i> <span class="resp-calculator">= 10</span><br>Divisão: <i>50 / 2</i> <span class="resp-calculator">= 25</span><br>Resto da divisão (módulo): <i>100 % 3</i> <span class="resp-calculator">= 1</span><br>Potência: <i>5 **2</i> <span class="resp-calculator">= 25</span><br><b>OBS:</b> Para usar essa funcionalidade do bot, não é necessário o uso do prefixo, nem de nenhum comando antes, basta digitar a operação matemática no chat e o bot lhe mostra o reultado.<br>Use <i>_controlcalculator</i> para configurar onde esse sistema pode ser utilizado em seu servidor.<br>Outras operações matemáticas podem ser feitas, as mostradas acimas são apenas exemplos simples.</p>
+            </li>
+          </ul>
+        </table>
+      </div>
+    </div>
   </section>
+
+  <script>
+    function displayCommands(index) {
+      const comandosDoTipo = document.getElementsByClassName('comandos-do-tipo')[index]
+      if(comandosDoTipo.style.display === 'block') {
+        comandosDoTipo.style.display = 'none'
+      } else {
+        comandosDoTipo.style.display = 'block'
+      }
+    }
+  </script>
 </body>
 </html>
