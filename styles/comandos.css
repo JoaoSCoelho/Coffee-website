@@ -41,10 +41,11 @@
   padding: 1rem 0;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--meio-branco);
+  cursor: pointer
 }
 
 .tipos:hover {
-  opacity: 0.9;
+  background: var(--cinza-escuro-opaco);
 }
 
 .tipos strong {
@@ -52,6 +53,18 @@
   color: var(--claro);
   line-height: 3rem;
   padding: 0 1rem;
+}
+
+.qtd-comandos-do-tipo {
+  border-radius: 50rem;
+  background: var(--cinza);
+  font-size: 0.9em;
+  font-weight: 200;
+  line-height: 2em;
+  min-width: 2em;
+  text-align: center;
+  float: right;
+  margin-right: 1rem;
 }
 
 .comandos-do-tipo {
@@ -62,6 +75,7 @@
   border-bottom-right-radius: 0.5rem;
   margin-bottom: 0.5rem;
   display: none;
+  cursor: auto;
 }
 
 .comandos-do-tipo ul {
@@ -107,6 +121,10 @@
 
 .resp-calculator {
   color: var(--avermelhado);
+  font-weight: normal;
+}
+
+.normal-weight {
   font-weight: normal;
 }
 

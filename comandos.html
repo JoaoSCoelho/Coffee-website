@@ -26,7 +26,9 @@
 
   <section id="corpo">
     <div class="tipos" onclick="displayCommands(0)">
-      <strong>Informativo</strong>
+      <strong>Informativo
+        <div class="qtd-comandos-do-tipo">10</div>
+      </strong>
       <div class="comandos-do-tipo">
         <table>
           <ul>
@@ -125,7 +127,9 @@
       </div>
     </div>
     <div class="tipos" onclick="displayCommands(1)">
-      <strong>Moderação</strong>
+      <strong>Moderação
+        <div class="qtd-comandos-do-tipo">5</div>
+      </strong>
       <div class="comandos-do-tipo">
         <table>
           <ul>
@@ -185,18 +189,119 @@
       </div>
     </div>
     <div class="tipos" onclick="displayCommands(2)">
-      <strong>Geral</strong>
+      <strong>Geral
+        <div class="qtd-comandos-do-tipo">10</div>
+      </strong>
       <div class="comandos-do-tipo">
         <table>
           <ul>
             <li class="li-esq">
               <div>
-                <p class="name-comando"><span class="prefix">_</span>_calculator</p><br>
+                <p class="name-comando"><span class="prefix">_</span>calculator</p><br>
                 <p class="aliases-comando"><span class="prefix">_</span>calculadora, <span class="prefix">_</span>calcular</p>
               </div>
             </li>
             <li class="li-dir">
               <p class="desc-comando">Calculadora para quando você precisar fazer uma conta rápida<br><b>Modo de usar</b><br>Soma: <i>3+3</i> <span class="resp-calculator">= 6</span><br>Subtração: <i>2-3</i> <span class="resp-calculator">= -1</span><br>Multiplicação: <i>2*5</i> <span class="resp-calculator">= 10</span><br>Divisão: <i>50 / 2</i> <span class="resp-calculator">= 25</span><br>Resto da divisão (módulo): <i>100 % 3</i> <span class="resp-calculator">= 1</span><br>Potência: <i>5 **2</i> <span class="resp-calculator">= 25</span><br><b>OBS:</b> Para usar essa funcionalidade do bot, não é necessário o uso do prefixo, nem de nenhum comando antes, basta digitar a operação matemática no chat e o bot lhe mostra o reultado.<br>Use <i>_controlcalculator</i> para configurar onde esse sistema pode ser utilizado em seu servidor.<br>Outras operações matemáticas podem ser feitas, as mostradas acimas são apenas exemplos simples.</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>desc</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>descreva, <span class="prefix">_</span>describe, <span class="prefix">_</span>guia, <span class="prefix">_</span>howtouse, <span class="prefix">_</span>comousa, <span class="prefix">_</span>comouso, <span class="prefix">_</span>mododeusar, <span class="prefix">_</span>mododeuso, <span class="prefix">_</span>comousar</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Mostra a descrição de cada comando!<br><b>Modo de usar</b> _desc kick</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>emojilist</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>listadeemojis, <span class="prefix">_</span>listemojis</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Mostra todos os emojis que o bot tem acesso!</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>ajuda</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>help, <span class="prefix">_</span>comandos, <span class="prefix">_</span>commands</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Comando usado quando o usuário necessita de ajuda ou precisa saber os comandos do bot</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>invite</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>convite</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Meu link de convite para me adicionar em algum outro servidor</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>ping</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>latencia, <span class="prefix">_</span>latência, <span class="prefix">_</span>lag, <span class="prefix">_</span>latency</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">O ping é utilizado para saber se eu estou na ativa e saber quanto tempo eu demoro para responder minhas solicitações.</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>rank</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>scorerank, <span class="prefix">_</span>rankscore, <span class="prefix">_</span>rankpontos, <span class="prefix">_</span>pontosranks, <span class="prefix">_</span>ranks, <span class="prefix">_</span>toprank, <span class="prefix">_</span>rankpontuacao</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Veja quais são os users com mais pontuação no servidor!</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>say</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>falar, <span class="prefix">_</span>diga, <span class="prefix">_</span>fale, <span class="prefix">_</span>repita, <span class="prefix">_</span>repeat</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">"Faça das suas as minhas palavras"<br><b>Como usar</b><br>No mesmo canal: <i>_say O que deve ser dito por mim</i><br>Em outro canal do servidor: <i>_say #outro-canal O que deve ser dito por mim</i><br>Usando Embed no mesmo canal: <i>_say `embed` Título da embed \ Descrição da embed \ #f5f5f5</i><br>Usando Embed em outro canal: <i>_say #outro-canal `embed` Título da embed \ Descrição da embed \ #808080</i><br><b>OBS:</b> Se você for utilizar embed na sua mensagem, coloque o termo <span class="normal-weight">"embed"</span> entre crases. O título da embed é obrigatório, mas a descrição e a cor não são.<br>Se você ficou confuso do que deve ser colocado no ultimo campo da embed, aquilo deve ser a cor em <span class="normal-weight">hex</span> que a embed deve assumir. Como você também deve ter percebido, os campos da embed devem ser separados com <span class="normal-weight">"\"</span> (barra invertida)!</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>score</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>pontuation, <span class="prefix">_</span>pontuação, <span class="prefix">_</span>pontos, <span class="prefix">_</span>level</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Veja seus pontos e em qual level você está!</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>viewmydata</p><br>
+                <p class="aliases-comando"><span class="prefix">_</span>vermeusdados, <span class="prefix">_</span>mydata, <span class="prefix">_</span>meusdados</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Veja na sua DM todos os dados que você tem registrados em nosso banco de dados!</p>
             </li>
           </ul>
         </table>
