@@ -405,7 +405,188 @@
         </table>
       </div>
     </div>
+    <div class="tipos" onclick="displayCommands(4)">
+      <strong>Gerenciamento
+        <div class="qtd-comandos-do-tipo">2</div>
+      </strong>
+      <div class="comandos-do-tipo" onclick="manterAberto(4)">
+        <table>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>createchannel</p>
+                <p class="aliases-comando"><span class="prefix">_</span>criarcanal, <span class="prefix">_</span>newchannel, <span class="prefix">_</span>criacanal, <span class="prefix">_</span>novocanal, <span class="prefix">_</span>gerarcanal, <span class="prefix">_</span>generatechannel</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Comando que cria um novo canal no servidor em que foi executado!<br><b>Modo de usar:</b><br><i>_createchannel nome-do-canal voice</i><br><b>OBS:</b> Se você quiser alterar o tipo do canal mas quiser manter o nome padrão que ele gera, use `auto` (entre crases) no lugar do nome do canal.</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>deletechannel</p>
+                <p class="aliases-comando"><span class="prefix">_</span>deletarcanal, <span class="prefix">_</span>deletecanal, <span class="prefix">_</span>excluircanal, <span class="prefix">_</span>excluacanal, <span class="prefix">_</span>excluirchannel, <span class="prefix">_</span>apagarcanal, <span class="prefix">_</span>apaguecanal, <span class="prefix">_</span>deletechannels, <span class="prefix">_</span>deletarcanais, <span class="prefix">_</span>deletecanais, <span class="prefix">_</span>excluircanais, <span class="prefix">_</span>excluacanais, <span class="prefix">_</span>excluirchannels, <span class="prefix">_</span>apagarcanais, <span class="prefix">_</span>apaguecanais</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Você pode utilizar esse comando para deletar um canal de algum servidor que você tenha a devida permissão.<br><b>Modo de usar:</b><br>Mencionando o canal: <i>_deletechannel #nome-do-canal</i><br>Ditando o ID do canal: <i>_deletechannel id_do_canal</i></p>
+            </li>
+          </ul>
+        </table>
+      </div>
+    </div>
+    <div class="tipos" onclick="displayCommands(5)">
+      <strong>Economia
+        <div class="qtd-comandos-do-tipo">9</div>
+      </strong>
+      <div class="comandos-do-tipo" onclick="manterAberto(5)">
+        <table>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>daily</p>
+                <p class="aliases-comando"><span class="prefix">_</span>moneydaily, <span class="prefix">_</span>work, <span class="prefix">_</span>trabalhar</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Receba todos os dias seu dinheirinho, de acordo com o seu emprego atual!</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>deposit</p>
+                <p class="aliases-comando"><span class="prefix">_</span>depositar, <span class="prefix">_</span>porembanco, <span class="prefix">_</span>pornobanco, <span class="prefix">_</span>putinbank</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Deposite seus CCoins no banco para poder aparecer no rank dos riquinhos  ou transferir quantias maiores para seus amigos (ou agiotas)! Com o dinheiro no banco você também pode comprar itens globais que valem para todos os servidores...<br><b>Modo de usar:</b> <i>_deposit &lt;valor&gt;</i></p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando"><span class="prefix">_</span>inventory</p>
+                <p class="aliases-comando"><span class="prefix">_</span>inventário, <span class="prefix">_</span>inventario, <span class="prefix">_</span>myitens, <span class="prefix">_</span>myitems, <span class="prefix">_</span>meusitems, <span class="prefix">_</span>meusitens, <span class="prefix">_</span>meusprodutos, <span class="prefix">_</span>myproducts, <span class="prefix">_</span>inv</p>
+              </div>
+            </li>
+            <li class="li-dir">
+              <p class="desc-comando">Veja todos os itens que você possui</p>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-esq">
+              <div>
+                <p class="name-comando">
+                  <span class="prefix">_</span>loja</p>
+                  <p class="aliases-comando"><span class="prefix">_</span>shop, <span class="prefix">_</span>compras, <span class="prefix">_</span>shopping, <span class="prefix">_</span>store, <span class="prefix">_</span>perigo</p>
+                </div>
+              </li>
+              <li class="li-dir">
+                <p class="desc-comando">Com esse comando você pode abrir a loja e ver todos os produtos que têm disponível na loja do bot.</p>
+              </li>
+            </ul>
+            <ul>
+              <li class="li-esq">
+                <div>
+                  <p class="name-comando"><span class="prefix">_</span>pagar</p>
+                  <p class="aliases-comando"><span class="prefix">_</span>pague, <span class="prefix">_</span>pay</p>
+                </div>
+              </li>
+              <li class="li-dir">
+                <p class="desc-comando">Pague CCoins para outra pessoa!<br><b>Modo de usar:</b> <i>_pagar &lt;valor&gt; @user</i></p>
+              </li>
+            </ul>
+            <ul>
+              <li class="li-esq">
+                <div>
+                  <p class="name-comando"><span class="prefix">_</span>moneyrank</p>
+                  <p class="aliases-comando"><span class="prefix">_</span>bankrank, <span class="prefix">_</span>rankdinheiro, <span class="prefix">_</span>rankccoins, <span class="prefix">_</span>ccoinsranks, <span class="prefix">_</span>mrank, <span class="prefix">_</span>topmoney, <span class="prefix">_</span>rankccoin, <span class="prefix">_</span>ccoinrank, <span class="prefix">_</span>dinheirorank, <span class="prefix">_</span>rankmoney</p>
+                </div>
+              </li>
+              <li class="li-dir">
+                <p class="desc-comando">Veja quem está no topo do poder em CCoins!</p>
+              </li>
+            </ul>
+            <ul>
+              <li class="li-esq">
+                <div>
+                  <p class="name-comando"><span class="prefix">_</span>saldo</p>
+                  <p class="aliases-comando"><span class="prefix">_</span>money, <span class="prefix">_</span>dinheiro, <span class="prefix">_</span>ccoins, <span class="prefix">_</span>balanco, <span class="prefix">_</span>balanço, <span class="prefix">_</span>balance</p>
+                </div>
+              </li>
+              <li class="li-dir">
+                <p class="desc-comando">Veja quantos CCoins você tem disponível!</p>
+              </li>
+            </ul>
+            <ul>
+              <li class="li-esq">
+                <div>
+                  <p class="name-comando"><span class="prefix">_</span>saque</p>
+                  <p class="aliases-comando"><span class="prefix">_</span>sacar, <span class="prefix">_</span>withdraw, <span class="prefix">_</span>towithdrow, <span class="prefix">_</span>retirardobanco, <span class="prefix">_</span>tirardobanco</p>
+                </div>
+              </li>
+              <li class="li-dir">
+                <p class="desc-comando">Saque seus CCoins do banco<br><b>Modo de usar:</b> <i>_saque &lt;valor&gt;</i></p>
+              </li>
+            </ul>
+            <ul>
+              <li class="li-esq">
+                <div>
+                  <p class="name-comando">
+                    <span class="prefix">_</span>transferir</p>
+                    <p class="aliases-comando"><span class="prefix">_</span>transferência, <span class="prefix">_</span>transfer</p>
+                  </div>
+                </li>
+                <li class="li-dir">
+                  <p class="desc-comando">Transfira CCoins da sua conta bancária para outras contas bancárias, sem limitações de quantidade.<br><b>Modo de usar:</b> <i>_transferir &lt;valor&gt; @user</i></p>
+                </li>
+              </ul>
+            </table>
+          </div>
+        </div>
+        <div class="tipos" onclick="displayCommands(6)">
+          <strong>Contato com os desenvolvedores
+            <div class="qtd-comandos-do-tipo">2</div>
+          </strong>
+          <div class="comandos-do-tipo" onclick="manterAberto(6)">
+            <table>
+              <ul>
+                <li class="li-esq">
+                  <div>
+                    <p class="name-comando"><span class="prefix">_</span>report</p>
+                    <p class="aliases-comando"><span class="prefix">_</span>reportar</p>
+                  </div>
+                </li>
+                <li class="li-dir">
+                  <p class="desc-comando">Se você encontrou algum bug ou coisa que você acredita que não esteja funcionando como deveria, basta usar o comando para que os devenvolvedores fiquem a par do problema e o resolva.<br><b>Como usar:</b> <i>_report seu report vai aqui</i></p>
+                </li>
+              </ul>
+              <ul>
+                <li class="li-esq">
+                  <div>
+                    <p class="name-comando"><span class="prefix">_</span>sugerir</p>
+                    <p class="aliases-comando"><span class="prefix">_</span>sugestao</p>
+                  </div>
+                </li>
+                <li class="li-dir">
+                  <p class="desc-comando">Se você gostaria de ver alguma nova funcionalidade no bot que ainda não tenha, ou qualquer tipo de feature, basta usar o comando para que os devenvolvedores fiquem a par da sugestão e possa prontamente atender aos seus pedidos.<br><b>Como usar:</b> <i>_sugerir sua sugestão vai aqui</i>
+                  </p>
+                </li>
+              </ul>
+            </table>
+          </div>
+        </div>
   </section>
+
+  <!-- <input type="text" id="name-tipo" placeholder="name tipo">
+  <button onclick="addTipo()">Add tipo</button>
+  <input type="text" id="add-comando-in-index" placeholder="Adicionar comando no tipo de indice">
+  <input type="text" id="name-comando" placeholder="name comando">
+  <input type="text" id="aliases-comando" placeholder="aliases comando com virgula">
+  <input type="text" id="desc-comando" placeholder="desc comando com html">
+  <button onclick="addComando()">add comando</button> -->
 
   <script src="javascript/comandos.js"></script>
 </body>
