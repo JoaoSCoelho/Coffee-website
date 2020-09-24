@@ -1,36 +1,7 @@
-#cabecalho {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  background-color: var(--cinza);
-  color: var(--claro);
-  padding: 0 1rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 4;
-  box-shadow: 0px 0px 10px #00000083;
-}
-
-#logo {
-  display: flex;
-  align-items: center;
-}
-
-#logo img {
-  height: 3.4rem;
-}
-
-#logo h1 {
-  font-family: 'Kumbh Sans', sans-serif;
-  color: var(--meio-branco);
-  margin-top: 0.3rem;
-  margin-left: 0.5rem;
-}
+/* Corpo */
 
 #corpo {
   margin: 6rem 1rem;
-  min-height: 100vh;
   border-radius: 0.5rem;
   font-size: 1.4rem
 }
@@ -133,10 +104,6 @@
 }
 
 @media (min-width: 800px) {
-  #cabecalho {
-    padding: 0 2rem;
-  }
-
   #corpo {
     max-width: 70rem;
     margin: 6rem auto;

@@ -1,0 +1,21 @@
+/* Menu */
+
+#menu {
+  margin-top: 5rem;
+  background: var(--cinza-escuro-opaco);
+  min-height: calc(100vh - 5rem);
+}
+
+.option-menu {
+  border: none;
+  border-bottom: 1px solid #0000009e;
+  background: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: 'Ubuntu Mono', sans-serif;
+  color: var(--claro);
+  line-height: 4rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
