@@ -24,4 +24,8 @@
   #menu {
     display: none !important;
   }
+
+  main {
+    display: block !important;
+  }
 }
