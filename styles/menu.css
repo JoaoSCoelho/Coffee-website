@@ -19,3 +19,9 @@
   padding: 0 1rem;
   cursor: pointer;
 }
+
+@media (min-width: 800px) {
+  #menu {
+    display: none !important;
+  }
+}
